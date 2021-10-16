@@ -134,6 +134,9 @@ text-align: center;
 letter-spacing: 0.03em;
 
 }
+.zanytie-kartinki {
+    display: flex;
+}
 .team {
     display: flex;
 }
@@ -182,14 +185,13 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 /* footer */
-.footer {
-
-padding-left: 215px;
+.footer-c {
 padding-top: 60px;
+padding-bottom: 60px;
 background: #2F303A;
 }
 .studiologo-foot {
-    font-family: Raleway;
+font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -197,17 +199,22 @@ letter-spacing: 0.03em;
 margin-bottom: 20px;
 color: #FFFFFF;
 }
+.studiologo-foot:visited {
+    color: #FFFFFF;
+}
+.adress, .mail {
+    margin-bottom: 9px;
+}
 .contact-footer a {
-font-style: normal;
+    font-style: normal;
 font-size: 14px;
-line-height: 1.7;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 
 }
 .adress a {
+    font-style: normal;
     font-size: 14px;
-    line-height: 1.7;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
