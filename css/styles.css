@@ -6,13 +6,48 @@ color: #212121;
 a {
     text-decoration: none;
 }
-
+a:active {
+    color: #2196F3;
+}
+a:visited {    
+color: #212121;
+}
 ul {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    background-color: yellow;
+}
 /* header */
+.top-navigation {
+    display: flex;
+    }
+.top-contact-container {
+    justify-content: flex-end;
+}
+.navigation-menu {
+    margin-right: 150px;
+}
+.navigation, .top-contact {
+    display: flex;
+    margin-top: 30px;
+}
+.navigation li {
+    margin-right: 50px;
+}
+.navigation li:last-child {
+    margin-right: 0px;
+}
+.top-contact li {
+    margin-right: 50px;
+}
+.top-contact li:last-child {
+    margin-right: 0px;
+}
 .navigation a {
 font-weight: 500;
 font-size: 14px;
@@ -24,13 +59,15 @@ letter-spacing: 0.02em;
     color: #2196F3;
 }
 .studiologo {
+    margin-top: 20px;
+    margin-right: 93px;
+    margin-bottom: 25px;
     font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
 letter-spacing: 0.03em;
 color: #000000;
-
 }
 
 .web {
@@ -49,30 +86,29 @@ color: #757575;
 }
 /* index main */
 .baner {
-    display: block;
-    padding-top: 200px;
-width: 1600px;
-height: 600px;
+padding-top: 200px;
 background: #2F303A;
 }
+.zakaz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .title {
-    width: 696px;
-height: 120px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
-margin-bottom: 30px;
-margin-left: 452px;
+width: 700px;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 text-align:center;
 color: #FFFFFF;
 background-color: aqua;
 }
+
 .zakaz {
 width: 200px;
 height: 50px;
-margin-left: 700px;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
@@ -82,22 +118,27 @@ line-height: 1.9;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 cursor: pointer;
-background-color: red;
+margin-bottom: 200px;
 }
 .zakaz:hover {
-    background: #188CE8;
+ background: #188CE8;
 
 }
+.team-container {
+}
 .zanytie, .komanda {
-    font-weight: 700;
+font-weight: 700;
 font-size: 36px;
 line-height: 1,2;
 text-align: center;
 letter-spacing: 0.03em;
 
 }
+.team {
+    display: flex;
+}
 .team h3 {
-    font-weight: 500;
+font-weight: 500;
 font-size: 16px;
 line-height: 1,2;
 letter-spacing: 0.03em;
@@ -143,8 +184,6 @@ color: #757575;
 /* footer */
 .footer {
 
-width: 1600px;
-height: 252px;
 padding-left: 215px;
 padding-top: 60px;
 background: #2F303A;
