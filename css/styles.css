@@ -17,10 +17,10 @@ ul {
     margin-left: 0;
     padding-left: 0;
 }
+
 .container {
     width: 1200px;
-    padding: 0px 15px;
-    background-color: yellow;
+    padding: 0px 15px 0px 15px;
 }
 /* header */
 .top-navigation {
@@ -85,9 +85,11 @@ color: #757575;
     color: #2196F3;
 }
 /* index main */
+.banner-c {
+    background: #2F303A;
+}
 .baner {
 padding-top: 200px;
-background: #2F303A;
 }
 .zakaz-container {
     display: flex;
@@ -103,7 +105,6 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 text-align:center;
 color: #FFFFFF;
-background-color: aqua;
 }
 
 .zakaz {
@@ -124,9 +125,12 @@ margin-bottom: 200px;
  background: #188CE8;
 
 }
-.team-container {
+.for-komanda {
+    background-color: #F5F4FA;
+
 }
 .zanytie, .komanda {
+    margin-bottom: 50px;
 font-weight: 700;
 font-size: 36px;
 line-height: 1,2;
@@ -137,8 +141,24 @@ letter-spacing: 0.03em;
 .zanytie-kartinki {
     display: flex;
 }
+.zanytie-kartinki li {
+    margin-right: 30px;
+}
 .team {
     display: flex;
+    
+}
+.team li {
+    width: 270px;
+   background-color:#FFFFFF;
+   margin-right: 30px;
+   text-align: center;
+
+}
+.team img {
+    display: block;
+    margin-bottom: 30px;
+}      
 }
 .team h3 {
 font-weight: 500;
