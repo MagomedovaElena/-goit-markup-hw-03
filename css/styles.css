@@ -3,6 +3,10 @@ body {
 font-family: 'Roboto', sans-serif;
 color: #212121;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 a {
     text-decoration: none;
 }
@@ -20,11 +24,12 @@ ul {
 .container {
     width: 1200px;
     padding: 0px 15px 0px 15px;
+    margin: 0 auto;
 }
 /* header */
 .top-navigation {
     display: flex;
-    border: 1px solid #F5F4FA;
+   align-items: center;
     }
 .top-contact-container {
     justify-content: flex-end;
@@ -34,19 +39,13 @@ ul {
 }
 .navigation, .top-contact {
     display: flex;
-    margin-top: 30px;
 }
-.navigation li {
+.navigation li:not(:last-child) {
     margin-right: 50px;
 }
-.navigation li:last-child {
-    margin-right: 0px;
-}
-.top-contact li {
+
+.top-contact li:not(:last-child) {
     margin-right: 50px;
-}
-.top-contact li:last-child {
-    margin-right: 0px;
 }
 .navigation a {
 font-weight: 500;
@@ -59,10 +58,8 @@ letter-spacing: 0.02em;
     color: #2196F3;
 }
 .studiologo {
-    margin-top: 20px;
-    margin-right: 93px;
-    margin-bottom: 25px;
-    font-family: Raleway;
+margin-right: 93px;
+font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -88,22 +85,19 @@ color: #757575;
 .section {
     padding: 94px 0px 94px 0px;
 }
-.banner-c {
-    background: #2F303A;
-}
+
 .baner {
 padding-top: 200px;
+text-align: center;
+background-color: #2F303A;
 }
-.zakaz-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
 width: 700px;
+margin: 0 auto;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 text-align:center;
@@ -114,7 +108,7 @@ color: #FFFFFF;
 width: 200px;
 height: 50px;
 background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+box-shadow: 0 cpx 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 font-weight: 700;
 font-size: 16px;
@@ -122,7 +116,6 @@ line-height: 1.9;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 cursor: pointer;
-margin-bottom: 200px;
 }
 .zakaz:hover {
  background: #188CE8;
@@ -154,10 +147,13 @@ letter-spacing: 0.03em;
 .team li {
     width: 270px;
    background-color:#FFFFFF;
-   margin-right: 30px;
    text-align: center;
 
 }
+.team li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .team img {
     display: block;
     margin-bottom: 30px;
@@ -246,7 +242,7 @@ color: #FFFFFF;
 .studiologo-foot:visited {
     color: #FFFFFF;
 }
-.adress, .mail {
+.adress li:not(:last-child) {
     margin-bottom: 9px;
 }
 .contact-footer a {
@@ -256,7 +252,7 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 
 }
-.adress a {
+.adress li:first-child {
     font-style: normal;
     font-size: 14px;
     letter-spacing: 0.03em;
