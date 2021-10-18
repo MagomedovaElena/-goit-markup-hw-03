@@ -52,10 +52,12 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-
 }
 .navigation a:hover {
     color: #2196F3;
+}
+.current a {
+    color: #2196F3; 
 }
 .studiologo {
 margin-right: 93px;
@@ -104,9 +106,10 @@ text-align:center;
 color: #FFFFFF;
 }
 
+
 .zakaz {
-width: 200px;
-height: 50px;
+    padding: 10px 32px 10px 32px;
+    margin-bottom: 200px;
 background: #2196F3;
 box-shadow: 0 cpx 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
@@ -121,10 +124,31 @@ cursor: pointer;
  background: #188CE8;
 
 }
+.description {
+    display: flex;
+}
+.description li:not(:last-child) {
+    margin-right: 30px;
+    background-color: blue;
+}
+.description h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+.description p {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;    
+        color: #757575;
+}
 .for-komanda {
     background-color: #F5F4FA;
 
 }
+
 .zanytie, .komanda {
     margin-bottom: 50px;
 font-weight: 700;
@@ -157,8 +181,7 @@ letter-spacing: 0.03em;
 .team img {
     display: block;
     margin-bottom: 30px;
-}      
-}
+}    
 .team h3 {
 font-weight: 500;
 font-size: 16px;
